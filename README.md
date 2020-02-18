@@ -49,6 +49,6 @@ html = etree.HTML(text)  # 初始化
 p0 = html.xpath('//p')
 print(etree.tostring(p0[0]).decode("utf-8"))
 
-\>>><p>hello world</p>
+>>><p>hello world</p>
 
 ```
