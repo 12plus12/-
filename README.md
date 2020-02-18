@@ -34,3 +34,20 @@ for i in range(10):
 >表格转自：[Gaolex](https://www.jianshu.com/u/9bd3ba22210c)
 
 [Sublime Text3 的 Markdown 实时预览全面总结](https://blog.csdn.net/qq_20011607/article/details/81370236)
+
+# xpath
+```
+from lxml import etree
+text = """
+<p> hello world </p>
+<p> hello world1 </p>
+<p> hello world2 </p>
+<p> hello world3 </p>
+"""
+html = etree.HTML(text)  # 初始化
+p0 = html.xpath('//p')
+print(etree.tostring(p0[0]).decode("utf-8"))
+
+\>>><p>hello world</p>
+
+```
